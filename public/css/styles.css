@@ -1,0 +1,595 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto";
+    background-color: #e6e4e4;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 100px;
+}
+
+.copy-header {
+    font-weight:  500;
+    text-align: center;
+}
+
+.button-navbar {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+}
+.main-navbar { /* listas navegador*/
+    display: none;
+}
+.main-navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.banner {
+    width: 100%;
+}
+.cafePadre {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px grey;
+    padding: 15px;
+    position: relative;
+}
+.descripcionCafetera {
+    border-top: 2px solid rgb(187, 186, 186);
+    margin-top: 20px;
+    position: relative;
+}
+.descripcionMac {
+    border-top: 2px solid rgb(187, 186, 186);
+    margin-top: 20px;
+    position: relative;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento {
+    font-size: 16px;
+    color: green;
+}
+.nombreProducto {
+    font-size: 16px;
+}
+.ultima-visita {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.displaynone1 {
+    display: none;
+}
+.displaynone2 {
+    display: none;
+}
+.displaynone3 {
+    display: none;
+}
+
+.footercito{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+.padreFootercito{
+    background-color: white;
+}
+#iconotarjeta{
+    font-size: 40px;
+    color: blue;
+    margin-top: 60px;
+}
+#iconoregalo{
+    font-size: 40px;
+    color: blue;
+}
+#iconoseguridad{
+    font-size: 40px;
+    color: blue;
+}
+.titulofooter{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+.textofooter{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 9px;
+    margin-right: 16px;
+    margin-top: 11px;
+}
+#copy{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    background-color: white;
+}
+
+.formulario1 {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        
+        display: flex;
+        justify-content: space-between;
+}
+    .cafePadre {
+    float: left;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px grey;
+    padding: 15px;
+    width: 48%;
+    margin: 1%;
+    position: relative;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+}
+    .button-navbar{
+        display: none;
+}
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+}
+    .main-navbar ul {
+        display: flex;
+}
+    .main-navbar li {
+        margin: 0 5px;
+}
+.displaynone2 {
+    display: block;
+}
+.displaynone3 {
+    display: none;
+}
+
+#iconotarjeta{
+    font-size: 40px;
+    color: blue;
+    margin-top: 60px;
+   
+}
+#iconoregalo{
+    font-size: 40px;
+    color: blue;
+}
+#iconoseguridad{
+    font-size: 40px;
+    color: blue;
+}
+.footercito{
+    display: inline-block;
+    
+
+}   
+.textofooter{
+    margin: 0px 60px 0px 60px;
+}
+#copy {
+    margin: 0;
+    padding-top: 30px;
+}
+
+@media (min-width: 1200px){
+    .logo {
+        width: 250px;   
+    }
+    .cafePadre {
+        float: left;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px grey;
+        padding: 15px;
+        width: 23%;
+        margin: 1%;
+        
+        background-color: white;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar {
+        align-items: center;
+
+
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .main-navbar {
+        margin-top: 40px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .displaynone1 {
+        display: block;
+    }
+    .displaynone2 {
+        display: block;
+    }
+    .displaynone3 {
+        display: block;
+    }
+    .footercito{
+        
+        margin-top: 5px;
+    }
+    .padreFootercito{
+        display: flex;
+        flex-direction: row;
+     }
+    #iconotarjeta, #iconoregalo, #iconoseguridad{
+        margin-top: 34px;
+    }
+    #copy{
+        margin: 0;
+        padding-top: 30px;
+        }
+        .cafePadre:hover {
+            box-shadow:0px 0px 10px rgb(100,100,100)
+        }
+    }
+}
+
+#auto {
+    color: green;
+    font-size: 15px;
+    background-color: white;
+    right: 10px;
+    top: -15px;
+    border:1px solid  green;
+    border-radius: 100%;
+    padding:7px;
+    position: absolute;
+}
+#auto:hover {
+    transform: rotate(-360deg);
+    transition: transform 4000ms;;
+}
+
+
+.descripcionGalaxy {
+    border-top: 2px solid rgb(187, 186, 186);
+    margin-top: 20px;
+    position: relative;
+}
+.descripcionTV {
+    border-top: 2px solid rgb(187, 186, 186);
+    margin-top: 20px;
+    position: relative;
+}
+
+
+/* de aca para abajo es el register.html*/
+
+    
+.formulario1 {
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    margin-top: 0px;
+    background-color: #e6e4e48a;
+    /*line-height: 30px;*/
+    
+    
+  }
+ 
+  
+  .formulariobody {
+      
+    background-color: #fcfcfc;
+  }
+  .creaTuCuenta {
+        margin-top: 40px;
+        font-size: 50px;
+        text-align: center;
+        font-family: "Roboto";
+        font-weight: 200;
+  }
+  .cajita {
+      max-width: 767px;
+      border: solid grey 1px;
+      margin: 8px;
+      padding-right: 60px;
+      border-radius: 5px;
+      text-align: left;
+      padding: 11px 0px 11px 60px;
+      border-radius: 12px;
+      background-color: #e6e4e48a;
+      }
+    .divisor1 {
+        text-align: center;
+      
+    }
+    .divisor2 {
+        text-align: center;
+    }
+    .parrafito1{
+        font-weight: bold;
+        text-align: left;
+        font-size: 18px;
+        margin: 14px 128px 11px 117px;
+    
+    } 
+    .parrafito2{
+        font-weight: bold;
+        text-align: left; /* no se alinea a la izq */
+        font-size: 18px; 
+        margin: 14px 127px 10px 36px;
+    }
+    
+    
+    .botones1 {
+        margin: 60px 0px 60px 0px
+
+    }
+    .fotoDePerfil {
+        margin: 14px 130px 11px -20px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    .botonElegir {
+        margin-left: 48px;
+
+    }
+    #date {
+    margin-right: 40px; /*no queda bien, consultar*/
+    }
+    .radio1 {
+        margin: 0px 10px 1px 27px;
+    }
+    .intereses {
+        margin: 0px 6px 2px 25px;
+    }
+
+@media (min-width:768px) {
+
+        .formulario1 {
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+             font-family: "Roboto";
+             margin-top: 50px;
+             background-color: #e6e4e4;
+             /*line-height: 30px;*/
+            
+             border-radius: 12px  
+
+        }
+        
+        }
+           .formulariobody {
+             background-color: #fcfcfc;
+           }
+           .creaTuCuenta {
+                 margin-top: 40px;
+                 font-size: 60px;
+                 text-align: center;
+                 font-family: "Roboto";
+                 font-weight: 300;
+           }
+           .cajita {
+               border: none;
+               margin: 8px;
+               padding-right: 60px;
+               border-radius: 5px;
+               text-align: left;
+               padding: 11px 0px 11px 60px;
+               border: solid grey 1px;
+               }
+             .divisor1 {
+                 text-align: center;
+               
+             }
+             .divisor2 {
+                 text-align: center;
+             }
+             .parrafito1{
+                 font-weight: bold;
+                 text-align: left;
+                 font-size: 18px;
+                 margin: 14px 128px 11px 117px;
+             
+             } 
+             .parrafito2{
+                 font-weight: bold;
+                 text-align: left; /* no se alinea a la izq */
+                 font-size: 18px; 
+                 margin: 14px 127px 10px 36px;
+             }
+             
+             
+             .botones1 {
+                 margin: 60px 0px 60px 0px
+         
+             }
+             .fotoDePerfil {
+                 margin: 14px 130px 11px -20px;
+                 font-weight: bold;
+                 text-align: left;
+                 font-size: 18px;
+             }
+             
+             .botonElegir {
+                 margin-left: 48px;
+         
+             }
+             #date {
+             margin-right: 40px; /*no queda bien, consultar*/
+             }
+             .radio1 {
+                 margin: 0px 10px 1px 27px;
+             }
+             .intereses {
+                 margin: 0px 6px 2px 25px;
+             }
+           /*de aca el css del login*/
+
+           .loginformulario{
+            background-color: #ebebeb;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+        }
+        .botonlogin{
+            margin: 60px 0px 60px 0px;
+            width: 75%;
+        }
+        .botonlogin:hover {
+            background-color: #0022AA;
+        }
+        #registrar1:hover {
+            background-color: #0022AA;
+        }
+        #resetear1:hover {
+            background-color: #0022AA;
+        }
+        
+        .nombredeusuario{
+            border: none;
+               margin: 8px;
+        
+               border-radius: 5px;
+               text-align: left;
+               padding: 11px 0px 11px 60px;
+            width: 75%;
+        }
+        .contraseña{
+            border: none;
+               margin: 8px;
+        
+               border-radius: 5px;
+               text-align: left;
+               padding: 11px 0px 11px 60px;
+               width: 75%;
+        }
+
+        @media  (min-width: 768px)  {
+            .loginformulario{
+                background-color: #ebebeb;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                align-items: center;
+                padding: 10px 40px 10px 40px;
+            }
+            .botonlogin{
+                margin: 40px 0px 60px 0px;
+                width: 25%;
+            }
+            .botonlogin:hover {
+                background-color: #0022AA;
+            }
+            
+            .nombredeusuario{
+                border: none;
+                   margin: 8px;
+            
+                   border-radius: 5px;
+                   text-align: left;
+                   padding: 11px 0px 11px 60px;
+                width: 40%;
+            }
+            .contraseña{
+                border: none;
+                   margin: 8px;
+            
+                   border-radius: 5px;
+                   text-align: left;
+                   padding: 11px 0px 11px 60px;
+                   width: 40%;
+            }   
+            @media  (min-width: 1200px)  {
+            .loginformulario{
+                background-color: #e6e4e4;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                align-items: center;
+                padding: 10px 40px 10px 40px;
+            }
+            .botonlogin{
+                margin: 40px 0px 60px 0px;
+                width: 25%;
+            }
+            .botonlogin:hover {
+                background-color: #0022AA;
+            }
+            
+            .nombredeusuario{
+                border: none;
+                margin: 8px;
+                border-radius: 5px;
+                text-align: left;
+                padding: 11px 0px 11px 60px;
+                width: 30%;
+            }
+            .contraseña{
+                border: none;
+                margin: 8px;
+                border-radius: 5px;
+                text-align: left;
+                padding: 11px 0px 11px 60px;
+                width: 30%;
+            }   
+
+        }
+            
+        
+    
+    }
+

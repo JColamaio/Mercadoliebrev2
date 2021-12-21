@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body class="formulariobody">
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/img/mercadoliebre.svg" class="logo">
+            <form class="buscador-main" action="action_page.php">
+                <input type="text" placeholder="Buscar productos, marcas" name="search">
+                <button class= "botoni-buscador" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <h2 class= "copy-header">
+                
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h2>
+        </div>
+       
+        <a href="#" class="button-navbar">
+                <i class="fas fa-bars"></i>
+        </a>
+            
+        <nav class="main-navbar">
+            <ul class= "left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+                
+            </ul>
+
+            <ul class= "right-navbar">
+                <li><a href="/registro">Crea tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                <li><a href="/loginformulario">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+       
+        
+    </header>
+    
+    <form class="loginformulario" action="login" method="GET">
+        <input class="nombredeusuario" type="text" name="usuario" placeholder="Nombre de usuario" required minlength="4">
+        <input class="contraseña"  type="text" name="contraseña" placeholder="Contraseña" required minlength="4">
+        <button type="submit" class="btn btn-primary btn-lg botonlogin">Enviar</button>
+    </form>
+   
+  </body>
+</html>
